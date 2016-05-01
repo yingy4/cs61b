@@ -27,7 +27,8 @@ class OpenCommercial {
     System.out.flush();        /* Make sure the line is printed immediately. */
     inputLine = keyboard.readLine();
 
-    /* Replace this comment with your solution.  */
+    URL url = new URL("http://www."+inputLine+".com/");
+    BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 
   }
 }
