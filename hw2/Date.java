@@ -208,7 +208,18 @@ class Date {
     Date d4 = new Date("2/27/1977");
     Date d5 = new Date("8/31/2110");
 
-    /* I recommend you write code to test the isLeapYear function! */
+
+    System.out.println("\nTesting isLeapYear.");
+    System.out.println(2000 + " is a leap year should be true: " + 
+            isLeapYear(2000));    
+    System.out.println(2004 + " is a leap year should be true: " + 
+            isLeapYear(2004));    
+    System.out.println(2100 + " is a leap year should be false: " + 
+            isLeapYear(2100));    
+    System.out.println(2001 + " is a leap year should be false: " + 
+            isLeapYear(20001));    
+    
+    
 
     System.out.println("\nTesting before and after.");
     System.out.println(d2 + " after " + d1 + " should be true: " + 
