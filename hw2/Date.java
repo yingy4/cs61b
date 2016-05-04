@@ -217,7 +217,7 @@ class Date {
     System.out.println(2100 + " is a leap year should be false: " + 
             isLeapYear(2100));    
     System.out.println(2001 + " is a leap year should be false: " + 
-            isLeapYear(20001));    
+            isLeapYear(2001));    
     
     
 
