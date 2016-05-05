@@ -112,6 +112,15 @@ public class SList {
 
   public void squish() {
     // Fill in your solution here.  (Ours is eleven lines long.)
+	  SListNode pointer = head;
+	  while ((pointer!=null) && (pointer.next!=null)){
+		  if (pointer.item.equals(pointer.next.item)){
+			  pointer.next = pointer.next.next;
+			  this.size--;
+		  } else {
+			  pointer = pointer.next;
+		  }
+	  }
   }
 
   /**
@@ -127,6 +136,13 @@ public class SList {
 
   public void twin() {
     // Fill in your solution here.  (Ours is seven lines long.)
+	  SListNode pointer = head;
+	  while (pointer!=null){
+		  SListNode copy = new SListNode(pointer.item,pointer.next);
+		  pointer.next = copy;
+		  this.size++;
+		  pointer = pointer.next.next;
+	  }
   }
 
   /**

@@ -21,6 +21,29 @@ public class Homework3 {
   public static void smoosh(int[] ints) {
     // Fill in your solution here.  (Ours is twelve lines long, not counting
     // blank lines or lines already present in this file.)
+	  int i=0;
+	  while (true){
+		  //no more elements need check
+		  if (ints[i]==-1){
+			  break;
+		  }
+		  //no more elements need check
+		  if (i==ints.length-1){
+			  break;
+		  }
+		  //check if two elements are same, if same, 
+		  //move all elements after this 1 position forward and set last element to -1
+		  if (ints[i]==ints[i+1]){
+			  for (int j=i+1;j<ints.length-1;j++){
+				  ints[j]=ints[j+1];
+			  }
+			  ints[ints.length-1]=-1;
+			  //go back 1 position to check if more elements are same
+			  i--;
+		  }
+		  i++;
+	  }
+
   }
 
   /**
